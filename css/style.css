@@ -1,0 +1,406 @@
+:root {
+    --dark: #2b2b2b;
+    --accent: #FBBA00;
+    --text: #fff;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    height: 40px;
+    font-size: 2em;
+    text-align: center;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    line-height: 1.667;
+}
+
+.container {
+    /* max-width: 1680px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+
+/* ==============HEADER=============== */
+
+
+.header {
+    min-height: 1100px;
+    background-color: var(--accent);
+    ;
+    position: relative;
+    overflow-x: hidden;
+
+    margin-bottom: 120px;
+}
+
+.header__papaya {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    width: 70vw;
+    z-index: 1;
+    /* transform: translateY(-50%); */
+}
+
+.header__top {
+    padding-top: 50px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__item {
+    margin-right: 70px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+letter-spacing: 0.05em;
+color: var(--dark);
+text-transform: uppercase;
+}
+
+.header__link--active {
+    color: white;
+    font-weight: 700;
+    background-color: var(--dark);
+    padding: 20px 65px;
+}
+
+.header__title {
+    font-weight: 900;
+    font-size: 220px;
+    line-height: 1;
+    color: #fff;
+    margin: 0;
+}
+
+.header__subtitle {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 145px;
+    transform: translateY(-10px);
+}
+
+.header__bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 90px;
+}
+
+.header__logo {
+    position: absolute;
+    top: -50%;
+}
+
+.header__nav {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==============HEADER=============== */
+
+
+/* =================BUY=============== */
+
+section {
+    margin-bottom: 120px;
+}
+
+.buy__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.buy__item {
+    width: 28%;
+    /* padding: 0 6px; */
+}
+
+.buy__image {
+    width: 100%;
+}
+
+.buy__price {
+    width: 100%;
+    margin-top: 57px;
+}
+
+.button--style {
+    color: var(--text);  
+    font-weight: 600;
+    font-size: 27px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--accent);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 300ms;
+
+    text-shadow: 20px 0px 40px rgba(0, 0, 0, 0.4);
+}
+
+.button--style:hover {
+    background-color: #fba300;
+    
+}
+
+/* =================BUY=============== */
+
+/* =================ABOUT============= */
+
+
+.about__wrap {
+    display: flex;
+
+}
+
+.about__list {
+    background-color: #B3D175;
+
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 129px; */
+    padding: 72px 77px;
+    justify-content: space-around;
+
+}
+
+.about__item {
+    display: flex;
+    
+    align-items: center;
+    text-shadow: 20px 0px 40px rgba(0, 0, 0, 0.4);
+    margin-bottom: 64px;
+}
+
+
+.about__content {
+    border-bottom: 10px solid #fff;
+}
+
+.about__icon {
+    margin-right: 67px;
+}
+
+.about__title {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--text);
+
+    margin-bottom: 33px;
+}
+
+.about__text {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text);
+    padding-bottom: 64px;
+}
+
+.about__picture {
+
+    margin-left: auto;
+    width: 50%;
+    background-image: url(/img/watermelon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* =================ABOUT============= */
+
+/* =================WHY============= */
+
+.why__content {
+    background-image: url(/img/banana.jpg);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.why__title {
+    font-size: 220px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--text);
+    padding-top: 376px;
+    text-transform: uppercase;
+}
+
+.why__text {
+
+    padding: 118px 266px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.why__text span {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* =================WHY============= */
+
+/* =================FOOTER==========*/
+
+.footer__wrap {
+    display: flex;
+    margin-top: 260px;
+    margin-bottom: 260px;
+}
+
+.side-left {
+    width: 30%;
+    padding-top: 87px;
+}
+
+.footer__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 85px;
+}
+
+.footer__text {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.side-left__mt {
+    margin-top: 40px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.button_send {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.side-right {
+    background-image: url(/img/pineapple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    margin-left: auto;
+    padding: 87px;
+    position: relative;
+}
+
+.color--white {
+    color: var(--text);
+}
+
+.info__icon {
+    margin-right: 38px;
+}
+
+.info__item {
+    padding: 37px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact__border {
+    border-bottom: 1px solid var(--accent);
+    
+}
+
+.color--white {
+    color: var(--text);
+}
+
+.contact__list {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #B3D175;
+    align-items: flex-end;
+
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    right: 0%;
+    height: 1020px;
+    transform: translate(0%, 15%);
+    padding-bottom: 50px;
+    width: 60%;
+
+}
+
+.contact__icon:hover {
+    width: 130%;
+
+}
+
+/* =================FOOTER==========*/
+
+/* =================@MEDIA==========*/
+
+@media (max-width:1400px) {
+    .container {
+        padding: 0 60px;
+    }
+    
+    .header__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
